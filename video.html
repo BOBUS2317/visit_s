@@ -1,0 +1,34 @@
+{% extends 'home/base.html' %}
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    video {
+      max-width: 80%;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    p {
+      margin-top: 12px;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+{% block title %}
+Свет, Камера, Мотор!
+{% endblock %}
+
+{% block content %}
+    <h1>На данной странице размещено видео-эссэ</h1>
+    <p>Приятного просмотра!</p>
+    <<video width="320" height="240" controls autoplay>
+      <source src="/Files/chipi-chapa.mp4" type="video/mp4">
+    </video>
+{% endblock %}

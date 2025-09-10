@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title class="container">
+        {% block title %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'home/css/main.css' %}">
+</head>
+<body>
+    <div class="d-flex gap-2 justify-content-center py-5">
+        <a class="btn btn-primary rounded-pill px-3" href="{% url 'home' %}" role="button">Главаная страница</a>
+<!--        <a class="btn btn-success rounded-pill px-3" href="{% url 'video_esse' %}" role="button">Видео-эссэ</a>-->
+        <a class="btn btn-danger rounded-pill px-3" href="{% url 'motivate_letter' %}" role="button">Мотивационное письмо</a>
+        <a class="btn btn-warning rounded-pill px-3" href="{% url 'portfolio' %}" role="button">Портфолио</a>
+    </div>
+
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+        <p>Сайт изготовил <a href="https://t.me/BOBUS2317">Миков Кирилл</a> специально для вас!</p> Связаться со мной можно здесь: <a href="https://mikovkd@gmail.com">Тык!</a> </p> </footer>
+</body>
+</html>

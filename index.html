@@ -1,0 +1,43 @@
+{% extends 'home/base.html' %}
+<meta charset="utf-8">
+Моя мотивация и планы
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    }
+    h1, h2 {
+    color: #2c3e50;
+    }
+    .timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    .timeline li {
+    margin: 10px 0;
+    padding-left: 15px;
+    border-left: 3px solid #3498db;
+    }
+    .quote {
+    border-left: 4px solid #3498db;
+    padding-left: 12px;
+    color: #555;
+    font-style: italic;
+    margin: 15px 0;
+    }
+</style>
+{% block title %}
+Главная
+{% endblock %}
+
+{% block content %}
+    <h1>HELLO WORLD</h1>
+    <h3>Меня Зовут Миков Кирилл, мне 18 лет, живу в Томске.</h3>
+    <p>Я очень позитивный и активный человек, люблю пошутить, поэтому со мной никогда не будет скучно</p>
+    <p>У меня много различных увлечений: Я катаюсь на велосипеде, разбираюсь в компьютерном “железе”, играю в настольные игры, коллекционирую ножи, часто гуляю, люблю слушать музыку, занимаюсь в спортзале.  </p>
+{% endblock %}
