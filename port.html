@@ -1,4 +1,5 @@
-{% extends 'home/base.html' %}
+<!DOCTYPE html>
+<html lang="ru">
 <style>
     body {
     font-family: Arial, sans-serif;
@@ -12,12 +13,30 @@
     color: #2c3e50;
     }
 </style>
-{% block title %}
-Портфолио
-{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <title class="container">
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="d-flex gap-2 justify-content-center py-5">
+        <a class="btn btn-primary rounded-pill px-3" href="index.html" role="button">Главаная страница</a>
+        <a class="btn btn-danger rounded-pill px-3" href="letter.html" role="button">Мотивационное письмо</a>
+        <a class="btn btn-warning rounded-pill px-3" href="port.html" role="button">Портфолио</a>
+    </div>
 
-{% block content %}
-    <h1>Порфолио</h1>
-    <h2>Его пока особо нет, но вы держитесь</h2>
 
-{% endblock %}
+    <div class="container">
+        <h1>Порфолио</h1>
+        <h2>Его пока особо нет, но вы держитесь</h2>
+    </div>
+
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+        <p>Сайт изготовил <a href="https://t.me/BOBUS2317">Миков Кирилл</a> специально для вас!</p> Связаться со мной можно здесь: <a href="https://mikovkd@gmail.com">Тык!</a> </p> </footer>
+</body>
+</html>
+
+    
